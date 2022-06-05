@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,sans-serif;
+}
+.sidebar{
+    position: fixed;
+    width: 83px;
+    height: 110vh;
+    background-color:#f1f3f5;
+    z-index: 104;
+     transition: all 0.5s ease;
+}
+.sidebar .logo h4 {
+    visibility: hidden;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    transition: all 0.5ms ease;
+    
+}
+.logo img {
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: all 0.5ms ease;
+}
+button {
+    width: 20px;
+    height: 30px;
+    margin-left: 33px;
+    margin-top: 25px;
+    background: transparent;
+    border: none;
+    transition: all 0.4s ease;
+}
+.sidebar input[type="text"]{
+  position: absolute;
+  display: none;
+}
+.search {
+    border-radius: 12px;
+    padding: 10px;
+    width: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    background: transparent;
+    border: none;
+    transition: all 0.50ms ease;
+}
+.home {
+    border-radius: 12px;
+    padding: 10px;
+    width: 23px;
+    margin-left: -12px;
+    margin-top: -10px;
+    transition: all 0.50ms ease;
+}
+.icons {
+    border-radius: 12px;
+    padding: 10px;
+    width: 23px;
+    margin-left: -12px;
+    margin-top: -8px;
+    transition: all 0.50ms ease;
+}
+.arrow {
+    border-radius: 12px;
+    width: 15px;
+    padding: 10px;
+    margin-top: -23px ;
+    margin-left: -9px;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+.settings{
+    border-radius: 12px;
+    padding: 10px;
+    border-radius: 12px;
+    position: sticky;
+    width: 20px;
+    margin-left: -12px;
+    margin-top: -5px;
+    
+}
+.settings:hover{
+    background-color: rgb(219, 226, 248);
+    animation: spin 55ms infinite linear;
+    transition: all 0.5s ease;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+
+}
+.home:hover{
+    padding: 10px;
+    background-color: rgb(219, 227, 230);
+    
+}
+.icons:hover{
+    background-color: rgb(219, 227, 230);
+    transition: all 0.5s ease;
+}
+.arrow:hover{
+    background-color: rgb(219, 227, 230);
+    transition: all 0.5s ease;
+}
+.search:hover{
+    background-color: rgb(219, 227, 230);
+    transition: all 0.5s ease;
+}
+
+button h3 {
+    position: relative;
+    margin-top: -30px;
+    left: -10px;
+    font-size: 1rem;
+    font-weight:bold;
+    padding: 0px 50px;
+    transition: left 400ms;
+    opacity: 0;
+    pointer-events: none;
+}
+
+button:hover h3{
+    left:10px ;
+    opacity: 1;
+    
+    
+}
+.footer button{
+    margin-top: 120px;
+    transition: all 0.5s ease;
+}
+ /***************siderbarfull***************/
+
+.sidebaractive {
+    position: fixed;
+    width: 18%;
+    height: 110vh;
+    z-index: 104;
+    background-color:#f1f3f5;
+     transition: all 0.5s ease;
+}
+.sidebaractive .logo{
+    margin-top: -10px;
+     transition: all 0.5s ease;
+}
+.sidebaractive .logo img {
+  margin-top:35px;
+   transition: all 0.5s ease;
+}
+.sidebaractive .logo h4{
+    margin-left: 85px;
+    margin-top: -35px;
+    font-size: 1rem;
+    transition: all 0.500ms ease;
+}
+.sidebaractive .arrow {
+    visibility: hidden;
+}
+
+.sidebaractive button:hover h3{
+    left: -10px;
+     transition: all 0.1ms ease;
+}
+.sidebaractive button h3 {
+   position: relative;
+   transition: none;
+   opacity: 1;
+   
+}
+.sidebaractive #ex-text{
+    visibility: hidden;
+}
+.sidebaractive #se-text{
+    visibility: hidden;
+}
+
+.sidebaractive button{
+        position: relative;
+        width:208px;
+        height:50px;
+        margin-left: 13px;
+        margin-top: 25px;
+        background-color:transparent;
+        border-radius: 12px;
+        border: none;
+}
+.sidebaractive .footer button{
+    margin-top: 120px;
+     transition: all 0.5s ease;
+}
+.sidebaractive form input[type="text"]{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+    width:125px;
+    padding: 13px 40px;
+    z-index: 150;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #c9ced4;
+    outline: none;
+    transition: all 0.1ms ease;
+}
+.sidebaractive form button{
+    background:transparent;
+    z-index: 200;
+    margin-left: 20px;
+    margin-top: 29px;
+    width: 42px;    
+     transition: all 0.5s ease;
+}
+.sidebaractive form button:hover{
+    background: transparent;
+}
+ .sidebaractive .expand button{
+    position: absolute;
+    visibility: hidden;
+}
+.sidebaractive .home{
+    margin-left: -150px;
+    margin-top: -8px;
+}
+.sidebaractive .icons{
+    margin-left: -150px;
+    margin-top: -8px;
+}
+.sidebaractive .settings{
+    margin-left: -150px;
+    margin-top: -5px;
+}
+.sidebaractive button:hover{
+    background-color: #c9ced4;
+     transition: all 0.5s ease;
+}
+
+.sidebaractive .home:hover{
+      background-color: #c9ced4;
+       transition: all 0.5s ease;
+}
+.icons:hover{
+    background-color: #c9ced4;
+     transition: all 0.5s ease;
+}
+.arrow:hover{
+    background-color:#c9ced4;
+     
+}
+.sidebaractive form button:hover {
+     background: transparent;
+}
+.sidebaractive .search:hover{
+    background: transparent;
+}
